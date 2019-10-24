@@ -9,15 +9,15 @@
   <description>Cordova Plugin QQSDK</description>
   <license>MIT</license>
   <keywords>cordova,qq</keywords>
-  <repo>https://github.com/iVanPan/Cordova_QQ</repo>
-  <issue>https://github.com/iVanPan/Cordova_QQ/issues</issue>
+  <repo>https://github.com/JoyoDuan/Cordova_QQ</repo>
+  <issue>https://github.com/JoyoDuan/Cordova_QQ/issues</issue>
 
   <preference name="QQ_APP_ID" />
 
   <!--require cordova version -->
   <engines>
     <engine name="cordova" version=">=4.0.0" />
-    <engine name="cordova-android" version=">=7.0.0" />
+    <engine name="cordova-android" version=">=6.3.0" />
   </engines>
 
   <!-- js module-->
@@ -136,13 +136,13 @@
       <preference name="QQ_APP_ID" value="$QQ_APP_ID" />
     </config-file>
   <!--permission for QQ SDK -->
-  <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
+  <config-file target="AndroidManifest.xml" parent="/*">
       <uses-permission android:name="android.permission.INTERNET" />
       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </config-file>
   <!--QQ webview Auth Activity -->
-  <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest/application">
+  <config-file target="AndroidManifest.xml" parent="/manifest/application">
    <activity
          android:name="com.tencent.tauth.AuthActivity"
          android:noHistory="true"
